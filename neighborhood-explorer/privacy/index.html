@@ -20,7 +20,7 @@
 <nav style="margin-bottom:24px;font-size:15px"><a href="/neighborhood-explorer/">← Neighborhood Explorer</a></nav>
 <section id="en">
 <h1>Neighborhood Explorer privacy policy</h1>
-<p class="meta">Last updated 30 September 2026</p>
+<p class="meta">Last updated 14 October 2026</p>
 
 <p>Neighborhood Explorer is made by Emil Müller. The short version: the app has no account, no ads and no analytics, and your walks and your home location stay on your phone.</p>
 
@@ -28,17 +28,18 @@
 <p>Your home area, the walks you record (GPS tracks, times and distances), the streets you have walked, names you give your walks and your settings are stored only on your device. We do not run any server, and we never receive this data.</p>
 
 <h2>Location</h2>
-<p>The app uses your precise location to record walks, to give turn-by-turn directions and to plan a route from where you are. While a walk is recording, it keeps using location in the background with a visible notification, so it works with the screen off. Location is not used when you are not on a walk or planning one, and it is never sent to us or to anyone else.</p>
+<p>The app uses your precise location to record walks, to give turn-by-turn directions and to plan a route from where you are. While a walk is recording, it keeps using location in the background with a visible notification, so it works with the screen off. Location is not used when you are not on a walk or planning one. Your walks and GPS tracks are never sent to us or to anyone else.</p>
+<p>The exact point you choose as the center of your area (your current position, if you pick &ldquo;My location&rdquo;) is sent to the map services below so they can return the streets and places around it. Your phone&rsquo;s geocoder also receives that point to show its address, and place search sends the point the map is centered on so nearby results come first. These services answer the request; we never receive or store the point.</p>
 
 <h2>Health Connect</h2>
 <p>If you choose to import past walks, the app reads your walking, running, hiking and wheelchair exercise sessions and their routes from Health Connect. It uses them only to mark the streets you have walked. This data stays on your phone and is never shared or used for advertising.</p>
 
 <h2>Services the app talks to</h2>
 <ul>
-  <li><strong>OpenStreetMap servers (Overpass API)</strong>: to download the streets and places (like playgrounds or cafés) around your chosen area, the app sends a map position and radius. No account, identifier or walk data is sent.</li>
+  <li><strong>OpenStreetMap servers (Overpass API)</strong>: to download the streets and places (like playgrounds or cafés) around your chosen area, the app sends the exact center of the area and its radius to public Overpass servers (overpass-api.de, overpass.private.coffee, overpass.kumi.systems and maps.mail.ru). No account, identifier or walk data is sent.</li>
   <li><strong>Terrain heights (Mapzen terrain tiles on Amazon Web Services open data)</strong>: to know how steep streets are, the app downloads terrain tiles covering your chosen area, the same way map images are loaded. Only tile coordinates are requested.</li>
   <li><strong>OpenFreeMap</strong>: map images are loaded from OpenFreeMap as you look at the map, like any online map.</li>
-  <li><strong>Place search</strong>: when you search for a place by name, the text you type is sent to your phone's built-in geocoder or to Photon (photon.komoot.io), an OpenStreetMap search service.</li>
+  <li><strong>Place search</strong>: when you search for a place by name, the text you type is sent, with the point the map is centered on, to your phone's built-in geocoder or to Photon (photon.komoot.io), an OpenStreetMap search service.</li>
   <li><strong>Google Play</strong>: purchases and in-app review prompts are handled by Google Play under Google's own privacy policy. We receive no payment details.</li>
 </ul>
 <p>These services see your device's IP address when the app contacts them, as with any internet request.</p>
